@@ -1,37 +1,216 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Alex Stachura</title>
-    <style>
-    @import url(style.css);
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Stachura about page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'><!--for using icons-->
+    <link rel="stylesheet" href="mediaqueries.css"> <!--makes the page responsive-->
 </head>
-
 <body>
-    <div class = "tlo">
-
-
-        <nav>
-            <img src="images/logo2.png" class="logo" alt="LOGO"
-                width ="200" height="200">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">STUDIES</a></li>
-                <li><a href="#">HOBBY</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>   
-
+    <header class="header">
+        <a href="#home" class="logo">Stachura <span>Alex</span></a>
+        <nav class="navbar"> <!--navigation block for the menu-->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sport" class="nav-link">Sport</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#trips" class="nav-link">Trips</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger"> <!--container for hamburger menu in mobile view-->
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
-        <div class="content">
-            <h1>Aleksandra Stachura</h1>
-            <h2>&bull; ? &bull; ? &bull; ? &bull; ? &bull;</h2>
-            <a href="#">more</a>
-        </div>       
-    </div>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi! I'm <span>Aleksandra</span></h1>
+            <p>I'm a student at AGH University of Science and Technology in Poland where I major in Automatic Control and Robotics. </p>
+            <div class="socials-icons">
+                <a href="#" onclick="location.href='https://instagram.com/'"><!--after the click open linked page-->
+                    <i class='bx bxl-instagram'></i> <!--identifies class and scpecific icon i want to use-->
+                </a> 
+                <a href="#" onclick="location.href='https://x.com/'">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="#" onclick="location.href='https://facebook.com/'">
+                    <i class='bx bxl-facebook-circle' ></i>
+                </a>
+            </div>
+            <div class="btn-group">
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="images/profile_pic.jpg" alt="my profile picture">
 
-</body>    
-
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/strz2.jpg" alt="Aleksandra Stachura profile picture in shooting gear">
+        </div>
+        <div class="about-content">
+            <h2 class="title"> <span>About</span> Me</h2>
+            <p>I'm currently a 3rd year student in Bachelors at AGH University of Science and Technology, where I major in Automatic Control and Robotics.<br>I'm also training in shooting as a sport discipline. As an athlete, I have achieved many victories, the biggest one being the Poland Championship in my age category. <br>In my free time, I enjoy traveling, both with my family and by myself. I have visited many countries in Europe and hope to visit countries outside of Europe in the future.</p>
+            <a href="more_about_me.html" class="btn">Read more</a>
+        </div>
+    </section>
+    <section class="sport" id="sport">
+        <h2 class="title"> My Sport <span>Career</span></h2>
+        <p>My interest in shooting as a sport stemmed from a friend who invited me to train with her once. Ever since then, I have done my best to hone my skills and become ever better. These are just some of my winnings.</p>
+        <div class="sport-container"><!--container for whole class-->
+            <div class="sport-box"> <!--container for 1 box element-->
+                <div class="sport-info">
+                    <h4>Poland Championship, Zielona Góra</h4>
+                    <p>First Place at Poland Championship with 392p score and evened Poland record.</p>
+                </div>
+                <div class="btn">
+                    <a href="sport1_more.html">Learn more</a>
+                </div>
+            </div>
+            <div class="sport-box">
+                <div class="sport-info">
+                    <h4>III Round Polish Cup Open, Starachowice</h4>
+                    <p>First Place at III Round Polish Cup with score 560p at KDW 3x20.</p>
+                </div>
+                <div class="btn">
+                    <a href="sport1_more.html">Learn more</a>
+                </div>
+            </div>
+            <div class="sport-box">
+                <div class="sport-info">
+                    <h4>X Poland Underground shooting competition, Bochnia</h4>
+                    <p>First Place at X Poland Underground shooting competition with 298p score and won spot in finals.</p>
+                </div>
+                <div class="btn">
+                    <a href="sport1_more.html">Learn more</a>
+                </div>
+            </div>
+            <div class="sport-box">
+                <div class="sport-info">
+                    <h4>XXIII Memorial in name of Jan Baran, Krosno</h4>
+                    <p>First time ever won competotion - First Place at XXIII Memorial in name of Jan Baran.</p>
+                </div>
+                <div class="btn">
+                    <a href="sport1_more.html">Learn more</a>
+                </div>
+            </div>
+            <div class="sport-box">
+                <div class="sport-info">
+                    <h4>II Round Polish Cup Open PZSS, Tarnów </h4>
+                    <p>Second Place at II Round Polish Cup Open PZSS with 540p at KDW 3x20.</p>
+                </div>
+                <div class="btn">
+                    <a href="sport1_more.html">Learn more</a>
+                </div>
+            </div>
+        </div>    
+    </section>
+    <section class="trips" id="trips">
+        <h2 class="title"> My <span>Trips</span></h2>
+        <p>Those listed are some of my favourite places I've travelled to.</p>
+        <div class="trips-box">   
+            <div class="trips-card">
+                <img src="images/jap.jpg" alt="Trips 1 - Japan">
+                <h3>Japan</h3>
+                <h4>2023/2024</h4>
+                <p>Japan seamlessly merges ancient tradition with cutting-edge technology.</p>
+                <div class="btn">
+                    <a href="france_more.html">See more</a>
+                </div>
+            </div>
+            <div class="trips-card">
+                <img src="images/fr2.jpg" alt="Trip 2 - France">
+                <h3>France</h3>
+                <h4>2023</h4>
+                <p>France is renowned for its exquisite cuisine and rich cultural heritage. </p>
+                <div class="btn">
+                    <a href="france_more.html">See more</a>
+                </div>
+            </div>
+            <div class="trips-card">
+                <img src="images/eng.jpg" alt="Trip - England">
+                <h3>England</h3>
+                <h4>2022</h4>
+                <p>England is a land of tradition and diversity.</p>
+                <div class="btn">
+                    <a href="england_more.html">See more</a>
+                </div>
+            </div>
+            <div class="trips-card">
+                <img src="images/buda.jpg" alt="Trip 4 - Budapest">
+                <h3>Budapest</h3>
+                <h4>2022</h4>
+                <p>Budapest captivates with its stunning architecture and thermal baths.</p>
+                <div class="btn">
+                    <a href="budapest_more.html">See more</a>
+                </div>
+            </div>
+            <div class="trips-card">
+                <img src="images/br.jpg" alt="Trip 5 - Berlin">
+                <h3>Berlin</h3>
+                <h4>2024</h4>
+                <p>Berlin is a vibrant metropolis blending history and modernity.</p>
+                <div class="btn">
+                    <a href="berlin_more.html">See more</a>
+                </div>
+            </div>
+            <div class="trips-card">
+                <img src="images/pr.jpg" alt="Trip 6 - Prague">
+                <h3>Prague</h3>
+                <h4>2019</h4>
+                <p>Prague enchants visitors with its fairytale-like architecture, rich history, and vibrant arts scene.</p>
+                <div class="btn">
+                    <a href="prague_more.html">See more</a>
+                </div>
+            </div>
+        </div>    
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="title">Contact <span>Me</span></h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <i class='bx bx-envelope'></i>
+                <p><a href="mailto:aleksandrastachura@gmail.com"></a>aleksandrastachura@gmail.com</p>
+            </div>
+        </div>   
+    </section>
+    <footer class="footer">
+        <div class="socials">
+            <a href="#">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="#">
+                <i class='bx bxl-twitter'></i>
+            </a>
+            <a href="#">
+                <i class='bx bxl-facebook-circle' ></i>
+            </a>
+        </div>
+        <ul class="list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#sport">Sport</a></li>
+            <li><a href="#trips">Trips</a></li>
+        </ul>
+        <p class="copyright">
+            copyright&#169; Aleksandra Stachura All Rights Reseved</p>
+    </footer>
+    <script src="script.js"></script>   <!--link to javascript file--> 
+</body>
 </html>
